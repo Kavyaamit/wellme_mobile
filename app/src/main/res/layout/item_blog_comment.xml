@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_normal"
+    android:background="@color/white"
+
+    android:id="@+id/ll_full"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minWidth="200dp"
+        android:layout_marginRight="@dimen/margin_xxlarge"
+        >
+
+        <ImageView
+            android:id="@+id/iv_receiver"
+            android:layout_width="@dimen/margin_xxlarge"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:src="@drawable/default_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minWidth="200dp"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_large">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/chat_send_expiry_bg"
+                android:padding="@dimen/margin_small">
+
+
+                <TextView
+                    android:id="@+id/tv_receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_receiver_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_small_11"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_receiver_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="03:30 PM"
+                    android:textStyle="normal"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_small1"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:minWidth="200dp"
+        android:gravity="end"
+        android:layout_marginStart="@dimen/margin_xxlarge">
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    android:minWidth="200dp"
+    android:layout_marginRight="@dimen/margin_normal">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/chat_reacive_bg"
+        android:padding="@dimen/margin_small">
+
+
+        <TextView
+                    android:id="@+id/tv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    />
+
+        <TextView
+            android:id="@+id/tv_owner_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size_small_11"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_owner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="03:30 PM"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_size_small1"
+            android:textColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_owner"
+            android:layout_width="@dimen/margin_xxlarge"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:src="@drawable/default_image"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

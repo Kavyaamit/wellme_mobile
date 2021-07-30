@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/margin_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#eeeeee"
+    app:cardUseCompatPadding="true"
+    android:minWidth="240dp"
+    app:cardCornerRadius="@dimen/margin_small"
+    android:elevation="@dimen/margin_small"
+
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="@dimen/margin_normal"
+        android:id="@+id/tv_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|bottom"
+        android:text="@string/choose_photo"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_medium"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:padding="@dimen/margin_normal"
+        android:id="@+id/tv_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_gallery"
+        android:drawablePadding="@dimen/margin_normal"
+        android:gravity="center_vertical|left"
+        android:text="@string/gallery"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal"
+        android:fontFamily="@font/poppins_regular"
+        android:drawableLeft="@drawable/ic_camera_gray"
+        android:drawablePadding="@dimen/margin_normal"
+        android:gravity="center_vertical|left"
+        android:text="@string/camera"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_small" />
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

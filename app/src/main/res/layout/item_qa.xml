@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/margin_small"
+        >
+        <ImageView
+            android:id="@+id/qa_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/login"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_xxxxxxxlarge"
+            android:background="#80000000"
+            android:padding="@dimen/margin_normal"
+            >
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Lorem Iprem"
+               android:textSize="@dimen/text_size_large"
+               android:textColor="@color/white"
+               android:singleLine="true"
+               />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem Iprem fgdfgk;dfg dfglkdfgk dfgkdf;gk dfgkfk;dfg lkl;fg klfg  lk;dfg  dfgk;ldfg  dfgk;lk;kdfg ;lkkdfg  dfgk;kdf"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

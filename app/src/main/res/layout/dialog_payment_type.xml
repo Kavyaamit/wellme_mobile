@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/margin_normal"
+    android:layout_marginRight="@dimen/margin_normal"
+    android:background="@color/transparent"
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
+
+
+                <TextView
+                    android:id="@+id/tv_razorpay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/unselect_right"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_normal"
+                    android:text="@string/razorpay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal"
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/grey"></View>
+
+
+                <TextView
+                    android:paddingBottom="@dimen/margin_normal"
+                    android:id="@+id/tv_paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/unselect_right"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/paypal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal"
+              />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_large"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:paddingRight="@dimen/margin_normal"
+                />
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/water_intake"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_large"
+                />
+            <TextView
+                android:id="@+id/tv_water_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 of 9 Glasses"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="@dimen/margin_medium"
+                />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:weightSum="1"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/grey_rounded_bg"
+                >
+             <LinearLayout
+                 android:id="@+id/ll_fill"
+                 android:layout_width="0dp"
+                 android:layout_weight="0"
+                 android:layout_height="20dp"
+                 android:background="@drawable/blue_rounded_bg"
+                 android:orientation="vertical"
+                 />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xxxlarge"
+                >
+                <ImageView
+                    android:id="@+id/iv_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gray_minus"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_glass"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/empty_glass"
+                    android:layout_marginHorizontal="@dimen/margin_xxlarge"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blue_plus"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_water_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Glass (250 ml)"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/tv_daily_water_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Water Intake"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="@dimen/margin_xxxxlarge"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="12 Tues"
+                        android:textColor="@color/black"
+                        android:textSize="6sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/margin_small"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/margin_small"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/margin_small"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_water_quantity7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/10"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="#C5F2FF"
+                        android:layout_marginTop="3dp"
+                        android:gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0"
+                            android:orientation="horizontal"
+                            android:background="#45d7ed"
+                            android:gravity="bottom"
+                            >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Tues"
+                        android:textSize="6sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:padding="0dp"
+        android:elevation="10dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        >
+        <ImageView
+            android:id="@+id/blog_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/login"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"
+            android:layout_centerInParent="true"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:padding="@dimen/margin_normal"
+            >
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Lorem Iprem"
+               android:textSize="@dimen/text_size_small"
+               android:textColor="@color/white"
+               android:singleLine="true"
+               />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem Iprem fgdfgk;dfg dfglkdfgk dfgkdf;gk dfgkfk;dfg lkl;fg klfg  lk;dfg  dfgk;ldfg  dfgk;lk;kdfg ;lkkdfg  dfgk;kdf"
+                android:textSize="@dimen/text_size_small1"
+                android:maxLines="5"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

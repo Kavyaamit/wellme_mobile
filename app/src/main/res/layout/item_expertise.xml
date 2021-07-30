@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_expertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/walking"
+        android:textSize="@dimen/text_size_small1"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/lighter_blue_rounded_corner_bg"
+        android:paddingHorizontal="@dimen/margin_normal"
+        android:paddingVertical="1dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

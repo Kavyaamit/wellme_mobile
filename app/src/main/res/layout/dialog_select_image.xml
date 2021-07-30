@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_with_top_rounded_corner_bg"
+        >
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:paddingHorizontal="@dimen/margin_normal">
+
+    <TextView
+        android:padding="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/margin_medium"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_gallery"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_blue"
+            />
+
+
+            <TextView
+                android:padding="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_gallery"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_medium"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_camera"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera_blue"
+                />
+
+
+            <TextView
+                android:padding="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_camera"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_medium"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_video"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_blue"
+                />
+
+            <TextView
+                android:padding="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_video"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_medium"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/ll_file"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/file_blue"
+                />
+
+
+            <TextView
+                android:padding="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_file"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_medium"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+<!--                <TextView-->
+<!--            android:padding="@dimen/margin_normal"-->
+<!--            android:layout_marginEnd="@dimen/margin_small"-->
+<!--            android:id="@+id/tv_cancel"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/cancel"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/margin_medium"-->
+<!--            android:textStyle="normal" />-->
+
+
+<!--        <TextView-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginStart="@dimen/margin_small"-->
+<!--            android:padding="@dimen/margin_normal"-->
+<!--            android:id="@+id/tv_update"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/margin_medium"-->
+<!--            android:textStyle="normal" />-->
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!--    </androidx.cardview.widget.CardView>-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/margin_large"
+            android:paddingHorizontal="@dimen/margin_medium"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_large"
+                >
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textSize="@dimen/text_size_xxlarge"
+                android:textColor="@color/black"
+
+                />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/tv_go_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/go_pro"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_normal"
+                    android:background="@drawable/green_rounded_corner_bg1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                >
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/default_image"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nilesh"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        />
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Indore, India"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/light_gray"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        />
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:tint="@color/light_gray"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

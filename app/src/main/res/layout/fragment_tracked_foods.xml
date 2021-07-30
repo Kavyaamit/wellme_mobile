@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/margin_large"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/workout_bg_with_gray_rounded_corner"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            >
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_food"
+                android:maxLength="10"
+                android:inputType="text"
+                android:textSize="@dimen/text_size_medium"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:drawableTint="@color/black"
+                android:drawablePadding="@dimen/margin_large"
+                android:padding="@dimen/margin_normal"
+                android:drawableLeft="@drawable/search"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frequently_tracked_foods"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tracked_foods"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_large"
+            android:overScrollMode="never"
+            />
+
+    </LinearLayout>
+</layout>
