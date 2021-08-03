@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/goal_header"
+            >
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back"
+                android:tint="@color/white"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/text_size_medium"
+
+                />
+            <ImageView
+                android:id="@+id/iv_goal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/muscle_gain"
+                android:tint="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_xxxxlarge"
+
+                />
+            <TextView
+                android:id="@+id/tv_body_measurement"
+                android:layout_below="@id/iv_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_measurement"
+                android:textSize="@dimen/text_size_xlarge"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_normal"
+                />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_body_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+
+            />
+    </LinearLayout>
+    </ScrollView>
+</layout>

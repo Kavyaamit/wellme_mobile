@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:padding="@dimen/margin_normal"
+                />
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Track Meal Reminder"
+                android:textSize="@dimen/text_size_xxlarge"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:paddingHorizontal="@dimen/margin_normal"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            >
+
+
+            <TextView
+                android:id="@+id/reminder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please set reminder according to your comfort zone"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/light_gray"
+                android:layout_marginTop="@dimen/margin_normal"
+                />
+
+           <LinearLayout
+               android:id="@+id/meal_layout"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="@dimen/margin_large"
+               >
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/margin_medium"
+                  >
+                  <CheckBox
+                      android:id="@+id/cb_breaakfast"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="@string/breakfast"
+                      android:textSize="@dimen/text_size_medium"
+                      android:layout_gravity="center"
+                      android:paddingHorizontal="@dimen/margin_small"
+                      android:textColor="@color/black"
+                      />
+
+                  <TextView
+                      android:id="@+id/tv_breakfast_time"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="09:30 PM"
+                      android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/light_gray"
+                      />
+              </LinearLayout>
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <CheckBox
+                       android:id="@+id/cb_morning_snack"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/morning_snack"
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_morning_snack_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="09:30 PM"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <CheckBox
+                       android:id="@+id/cb_lunch"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/lunch"
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_lunch_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="09:30 PM"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <CheckBox
+                       android:id="@+id/cb_evening_snack"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/evening_snack"
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_evening_snack_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="09:30 PM"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <CheckBox
+                       android:id="@+id/cb_dinner"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/dinner"
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_dinner_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="09:30 PM"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+               <View
+                   android:layout_width="fill_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/light_gray"
+                   android:layout_marginTop="@dimen/margin_normal"
+                   />
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <RadioButton
+                       android:id="@+id/cb_track_meal_once_at"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/remind_me_once_to_track"
+                       android:textSize="@dimen/text_size_medium"
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_remind_me_track_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="09:30 PM"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/margin_medium"
+                   >
+                   <RadioButton
+                       android:id="@+id/cb_track_meal_once_every_week"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="@string/remind_me_once_every"
+                       android:textSize="@dimen/text_size_medium"
+
+                       android:paddingHorizontal="@dimen/margin_small"
+                       android:textColor="@color/black"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_remind_me_once_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Sunday"
+                       android:textSize="@dimen/text_size_medium"
+                       android:textColor="@color/light_gray"
+                       />
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/log_weight_layout"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginTop="@dimen/margin_large"
+             >
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="@dimen/margin_medium"
+                 >
+                 <RadioButton
+                     android:id="@+id/cb_logweight_every_month_on"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:text="@string/remind_me_every_month_on"
+                     android:textSize="@dimen/text_size_medium"
+                     android:paddingHorizontal="@dimen/margin_small"
+                     android:textColor="@color/black"
+                     />
+
+                 <TextView
+                     android:id="@+id/tv_remind_me_logweight_time"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="23rd"
+                     android:textSize="@dimen/text_size_medium"
+                     android:textColor="@color/light_gray"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="@dimen/margin_medium"
+                 >
+                 <RadioButton
+                     android:id="@+id/cb_logweight_once_every_week"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:text="@string/remind_me_once_every"
+                     android:textSize="@dimen/text_size_medium"
+
+                     android:paddingHorizontal="@dimen/margin_small"
+                     android:textColor="@color/black"
+                     />
+
+                 <TextView
+                     android:id="@+id/tv_logweight_remind_me_once_every"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Sunday"
+                     android:textSize="@dimen/text_size_medium"
+                     android:textColor="@color/light_gray"
+                     />
+             </LinearLayout>
+         </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/walking_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_large"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                >
+                <CheckBox
+                    android:id="@+id/cb_walking_once_at"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remind_me_once_at"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_walking_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09:30 PM"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/light_gray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/working_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    >
+                    <CheckBox
+                        android:id="@+id/cb_working_once_at"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remind_me_once_at"
+                        android:textSize="@dimen/text_size_medium"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_working_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:30 PM"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/light_gray"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/drink_water_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    >
+                    <RadioButton
+                        android:id="@+id/cb_drink_water_every_hour"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remind_me_every"
+                        android:textSize="@dimen/text_size_medium"
+
+                        android:paddingHorizontal="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_drink_water_every_hour_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/light_gray"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    >
+                    <RadioButton
+                        android:id="@+id/cb_drink_water_every_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remind_me"
+                        android:textSize="@dimen/text_size_medium"
+
+                        android:paddingHorizontal="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_drink_water_every_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/light_gray"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    >
+                    <RadioButton
+                        android:id="@+id/cb_drink_water_every_datetime"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remind_me_once_every"
+                        android:textSize="@dimen/text_size_medium"
+
+                        android:paddingHorizontal="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_drink_water_every_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/light_gray"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    >
+                    <RadioButton
+                        android:id="@+id/cb_drink_water_day_in_week"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remind_me_once_every"
+                        android:textSize="@dimen/text_size_medium"
+
+                        android:paddingHorizontal="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_drink_water_day_in_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/light_gray"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/save"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#823DFC</color>
+    <color name="base_color">#823DFC</color>
+    <color name="colorPrimaryDark">#823DFC</color>
+    <color name="colorAccent">#823DFC</color>
+    <color name="black">#000</color>
+    <color name="light_gray">#929292</color>
+    <color name="text_brown_theme">#aeaeae</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_red">#f2bbe0</color>
+    <color name="red">#F43D75</color>
+    <color name="red1">#FF0000</color>
+    <color name="light_green">#CBFFDF</color>
+    <color name="light_blue">#CBE3FF</color>
+    <color name="light_branjil">#cc9cf0</color>
+    <color name="light_pink">#ECD2FB</color>
+    <color name="lighter_pink">#F6DBDC</color>
+    <color name="lighter_orange">#F6E3B5</color>
+    <color name="light_blue1">#45d7ed</color>
+    <color name="light_yellow">#edd458</color>
+    <color name="green">#48DD68</color>
+    <color name="blue">#7C25FF</color>
+    <color name="orange">#FDEA6E</color>
+    <color name="dark_orange">#E9C23F</color>
+    <color name="sky_blue">#4CDEFF</color>
+    <color name="pink">#F13CC2</color>
+    <color name="workout_color">#ECECEC</color>
+    <color name="testimonials_color">#E6D8FF</color>
+
+    <color name="text_light_theme">#616161</color>
+    <color name="comment_send">#EFF4FE</color>
+    <color name="comment_reacive">#F8F9FC</color>
+</resources>

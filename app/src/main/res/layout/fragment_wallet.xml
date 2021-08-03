@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_normal"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:padding="@dimen/margin_normal"
+                />
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet"
+                android:textSize="@dimen/text_size_xxlarge"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:paddingHorizontal="@dimen/margin_normal"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_full_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="0dp"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    android:elevation="10dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    >
+                    <TextView
+                        android:id="@+id/tv_wallet_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ruppe_symbol"
+                        android:textSize="@dimen/margin_xxlarge"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:paddingHorizontal="@dimen/margin_normal"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_whatsapp"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/whatsapp_logo"
+
+                            />
+                        <ImageView
+                            android:id="@+id/iv_insta"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/instragram_logo"
+
+                            />
+                        <ImageView
+                            android:id="@+id/iv_facebook"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/facebook_logo"
+
+                            />
+                        <ImageView
+                            android:id="@+id/iv_share_link"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/copt_text_logo"
+
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_refer_earn"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="@string/refer_earn"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_small"
+                        android:textAllCaps="false"
+                        android:background="@drawable/bg_theme_with_rounded_corner"
+                        android:layout_margin="@dimen/margin_normal"
+
+                        />
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_transaction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:paddingHorizontal="@dimen/margin_normal"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/rv_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            android:overScrollMode="never"
+
+            />
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Transaction found yet!!"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

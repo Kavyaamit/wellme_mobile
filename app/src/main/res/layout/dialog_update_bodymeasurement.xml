@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:background="@drawable/button_white_rounded"
+            >
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_weight"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_xxxlarge"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_xxxlarge"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/remove"
+                android:padding="@dimen/margin_normal"
+                android:tint="@color/white"
+                android:background="@drawable/theme_rounded_bg"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:background="@drawable/white_bg_with_theme_rounded_corner"
+                android:paddingHorizontal="@dimen/margin_xxlarge"
+              >
+                <TextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:minHeight="40dp"
+                    android:text="70 kg"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus"
+                android:padding="@dimen/margin_normal"
+                android:tint="@color/white"
+                android:background="@drawable/theme_rounded_bg"
+                />
+
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="30dp"
+
+
+        >
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:background="@drawable/theme_rounded_corner_bg"
+
+            />
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </LinearLayout>

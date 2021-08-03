@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_normal"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="@dimen/margin_normal"
+            />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/offers"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:paddingHorizontal="@dimen/margin_normal"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coming_soon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Coming Soon"
+        android:layout_marginTop="2dp"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+</layout>

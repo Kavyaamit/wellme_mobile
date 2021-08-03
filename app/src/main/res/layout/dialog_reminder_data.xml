@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:background="@drawable/button_white_rounded"
+            >
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_weight"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|right"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_marginBottom="@dimen/margin_large"
+            >
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_large"
+
+                />
+
+
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>

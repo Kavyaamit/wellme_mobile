@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/goal_header"
+                >
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/text_size_medium"
+
+                    />
+                <ImageView
+                    android:id="@+id/iv_goal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/muscle_gain"
+                    android:tint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_xxxxlarge"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_body_measurement"
+                    android:layout_below="@id/iv_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/body_measurement"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            >
+         <LinearLayout
+             android:id="@+id/ll_body_fats"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_margin="@dimen/margin_normal"
+             android:gravity="center"
+             >
+
+             <TextView
+                 android:id="@+id/tv_body_fats_text"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="@string/click_here_to_add_body_fat"
+                 android:textSize="@dimen/text_size_medium"
+                 android:layout_gravity="center"
+                 android:textColor="@color/black"
+                 android:layout_marginLeft="@dimen/margin_normal"
+                 />
+
+             <TextView
+                 android:id="@+id/tv_body_fats"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=""
+                 android:textSize="@dimen/text_size_medium"
+                 android:layout_marginHorizontal="@dimen/margin_medium"
+                 android:layout_gravity="center"
+                 android:textColor="@color/black"
+                 android:layout_marginLeft="@dimen/margin_normal"
+                 />
+             <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="15dp"
+                 android:src="@drawable/plus"
+                 android:layout_gravity="center"
+                 android:layout_marginRight="@dimen/margin_small"
+                 />
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_muscles_mass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_muscle_mass_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_muscle_mass"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_muscles_mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_hips_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_hips"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_hips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_waist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_waist_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_waist"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_waist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_arm_left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_arm_left_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_arm_left"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_arm_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_arm_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_arm_right_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_arm_right"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_arm_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_chest_text"
+                    android:layout_below="@id/iv_goal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_chest"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_chest"
+                    android:layout_below="@id/iv_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_thigh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_thigh_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_thigh"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_thigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_calf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_calf_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_add_calf"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_calf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="@dimen/margin_medium"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/plus"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_small"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

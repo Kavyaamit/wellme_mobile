@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/margin_normal"
+            >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="@dimen/margin_normal"
+            />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_goal_progress"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:paddingHorizontal="@dimen/margin_normal"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/full_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large"
+            >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 of 14 kg Lost"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            />
+        <LinearLayout
+            android:id="@+id/ll_start_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_xxxxlarge"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_start_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_weight"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center|left"
+                    />
+                <TextView
+                    android:id="@+id/tv_start_weight_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on 01 September, 2020"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/light_gray"
+                    android:layout_gravity="center|left"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_start_weight_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70 kg"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:layout_gravity="center|left|bottom"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_target_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_target_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/target_weight"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center|left"
+                    />
+                <TextView
+                    android:id="@+id/tv_target_weight_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on 16 March, 2020"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/light_gray"
+                    android:layout_gravity="center|left"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_target_weight_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56 kg"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:layout_gravity="center|left|bottom"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/dashed_line"
+            android:layout_marginVertical="@dimen/margin_large"
+            />
+
+        <TextView
+            android:id="@+id/tv_weight_log_added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_log_added"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"
+            android:layout_gravity="center|left"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_weight_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            />
+
+        </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_add_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/theme_rounded_corner_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                >
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plus"
+                    android:padding="@dimen/margin_normal"
+                    android:tint="@color/red"
+                    android:background="@drawable/white_rounded_bg"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    android:layout_marginVertical="@dimen/margin_normal"
+                    />
+                <TextView
+                    android:id="@+id/tv_add_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:minHeight="40dp"
+                    android:text="@string/add_weight"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_normal"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    />
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plus"
+                    android:padding="@dimen/margin_normal"
+                    android:tint="@color/red"
+                    android:background="@drawable/white_rounded_bg"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    android:layout_marginVertical="@dimen/margin_normal"
+                    />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="30dp"
+
+
+                >
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/theme_rounded_corner_bg"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus"
+                android:padding="@dimen/margin_normal"
+                android:tint="@color/red"
+                android:background="@drawable/white_rounded_bg"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginVertical="@dimen/margin_normal"
+                />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"
+                android:minHeight="40dp"
+                android:text="@string/add_weight"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_normal"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                />
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus"
+                android:padding="@dimen/margin_normal"
+                android:tint="@color/red"
+                android:background="@drawable/white_rounded_bg"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:layout_marginVertical="@dimen/margin_normal"
+                />
+        </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

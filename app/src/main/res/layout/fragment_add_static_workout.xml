@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/margin_large"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="@dimen/margin_normal"/>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/workout"
+        android:textSize="@dimen/text_size_xxlarge"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_small"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_large"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/workout_demo"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/white_rounded_bg"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play1"
+            android:padding="@dimen/margin_large"
+            android:tint="@color/red"
+            />
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            >
+            <Spinner
+                android:id="@+id/sp_type"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/speed_unit"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+            android:layout_marginTop="@dimen/margin_medium"
+            >
+            <EditText
+                android:id="@+id/et_speed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/speed"
+                android:maxLength="7"
+                android:inputType="phone"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:singleLine="true"
+                android:focusable="false"
+                android:paddingVertical="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/tv_speed_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/speed_unit"
+                android:textSize="@dimen/text_size_mini"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="@dimen/margin_normal"
+                android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+            android:layout_marginTop="@dimen/margin_medium"
+            >
+            <EditText
+                android:id="@+id/et_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/time"
+                android:maxLength="6"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:singleLine="true"
+                android:paddingVertical="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/tv_time_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/mins"
+                android:textSize="@dimen/text_size_mini"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="@dimen/margin_normal"
+                android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+            android:layout_marginTop="@dimen/margin_medium"
+            >
+            <EditText
+                android:id="@+id/et_distance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/distance"
+                android:maxLength="7"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:singleLine="true"
+                android:paddingVertical="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/tv_distance_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/km"
+                android:textSize="@dimen/text_size_mini"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="@dimen/margin_normal"
+                android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/margin_normal"
+            >
+            <TextView
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/light_gray"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:orientation="horizontal"
+                android:background="@drawable/dashed_line"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+            android:layout_marginTop="@dimen/margin_medium"
+            >
+            <EditText
+                android:id="@+id/et_calorie_burn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/calorie_burns"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:singleLine="true"
+                android:paddingVertical="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/tv_calorie_burn_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/kcal"
+                android:textSize="@dimen/text_size_mini"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="@dimen/margin_normal"
+                android:background="@drawable/white_bg_with_theme_thin_rounded_corner"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_workout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_rounded_corner_bg"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/add_workout"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+
+            />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="30dp"
+
+
+            >
+            <Button
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme_rounded_corner_bg"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/add_workout"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</layout>

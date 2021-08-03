@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="@dimen/margin_normal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            >
+            <com.wellme.utils.CirleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_image"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+                <TextView
+                    android:id="@+id/tv_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_small"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/share_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:background="@drawable/bg_white_with_app_corner"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="15dp"
+                >
+                <LinearLayout
+                    android:id="@+id/document_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    android:layout_margin="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/chat_document"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Document"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/audio_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    android:layout_margin="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/chat_audio"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/gallery_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    android:layout_margin="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/chat_gallery"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/margin_small"
+                android:background="@drawable/card_form_layout"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:paddingVertical="@dimen/margin_small"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_chat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/margin_small"
+                    android:paddingHorizontal="@dimen/text_margin_normal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <ImageView
+                    android:id="@+id/iv_pin"
+                    android:layout_gravity="center|bottom"
+                    android:padding="@dimen/text_margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attach_icon"/>
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_gravity="center|bottom"
+                    android:padding="@dimen/text_margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camera_icon"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_record"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/mic_icon"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/send_icon"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</layout>
